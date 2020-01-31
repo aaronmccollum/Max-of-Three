@@ -1,0 +1,23 @@
+# Directions: Implement a function that takes as input three variables, and returns the largest of the three. 
+# Do this without using the Python max() function!
+# The goal of this exercise is to think about some internals that Python normally takes care of for us. 
+# All you need is some variables and if statements!
+
+# Variables
+variableA = int(input("Please provide a number: "))
+variableB = int(input("Please provide a second number: "))
+variableC = int(input("Please provide a third number: "))
+
+# Defining function
+def largestNumber(variableA, variableB, variableC):
+    if (variableA > variableB) and (variableA > variableC):
+        print(str(variableA) + " is the largest number you entered.")
+    elif (variableB > variableA) and (variableB > variableC):
+        print(str(variableB) + " is the largest number you entered.")
+    elif (variableC > variableA) and (variableC > variableB):
+        print(str(variableC) + " is the largest number you entered.")
+    else:
+        print("Let's try this again.")
+
+# Run function
+largestNumber(variableA, variableB, variableC)
